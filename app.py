@@ -11,8 +11,8 @@ import glob
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 
 st.set_page_config(
-    page_title="ResearchGuard | 연구비 규정 검토 AI",
-    page_icon="🔍",
+    page_title="ResearchAdmin Guard | 연구비 규정 검토 AI",
+    page_icon="🛡️",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -251,7 +251,7 @@ if "vectorstore" not in st.session_state:
 
 # 사이드바
 with st.sidebar:
-    st.markdown("### 🔍 ResearchGuard")
+    st.markdown("### 🛡️ ResearchAdmin Guard")
     st.markdown("---")
     st.markdown("**📚 학습된 법령**")
     for f in st.session_state.get("loaded_files", []):
@@ -272,7 +272,7 @@ with st.sidebar:
 st.markdown("""
 <div class="main-header">
     <div>
-        <h1>🔍 ResearchGuard</h1>
+        <h1>🛡️ ResearchAdmin Guard</h1>
         <p>국가연구개발혁신법 기반 연구비 규정 자동 검토 시스템</p>
     </div>
     <span class="header-badge">AI POWERED</span>
